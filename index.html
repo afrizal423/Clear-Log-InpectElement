@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clear Log Console Inspect Element</title>
+  </head>
+<body id="body" position: relative; min-height: 100%; top: 0px; oncontextmenu="return false" onkeydown="return true;" onmousedown="return true;">
+<h3>Clear Log Console Inspect Element</h3>
+   <form action="">
+    <h4>question One</h4>
+    <input type="checkbox"  value="Setuju">Setuju<br>
+    <input type="checkbox"  value="Tidak Setuju">Tidak Setuju
+    <h4>question Two</h4>
+    <input type="checkbox"  value="Setuju">Setuju<br>
+    <input type="checkbox"  value="Tidak Setuju">Tidak Setuju
+    <h4>question Three</h4>
+    <input type="checkbox" value="Setuju">Setuju<br>
+    <input type="checkbox"  value="Tidak Setuju">Tidak Setuju
+    <h4>question Four</h4>
+    <input type="checkbox" value="Setuju">Setuju<br>
+    <input type="checkbox" value="Tidak Setuju">Tidak Setuju
+    <h4>question Five</h4>
+    <input type="checkbox" value="Setuju">Setuju<br>
+    <input type="checkbox" value="Tidak Setuju">Tidak Setuju
+  </form>
+   <script>
+   var currentInnerHtml;
+   var elementWithHiddenContent = document.querySelector("#body");
+   var innerHtml = elementWithHiddenContent.innerHTML;
+
+   setInterval(function() {
+   		currentInnerHtml = innerHtml;
+   		console.clear();
+   }, 500);
+   </script>
+</body>
+</html>
+
